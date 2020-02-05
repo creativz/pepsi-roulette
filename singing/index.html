@@ -1,0 +1,131 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINGING CHALLENGE</title>
+    <link rel="stylesheet" href="../assets/css/foundation.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+  </head>
+  <body>
+    <div class="blue-bar"></div>
+    <div class="main-container">
+        <header>
+          <a href="/roulette.pepsi"><img src="../assets/images/pepsi-challenge.png" alt=""></a>
+        </header>
+        <section class="page-content">
+            <h1 class="roulette-title">SINGING</h1>
+            <div class="roulette-wrapper animated zoomIn">
+              <div class="grid-container roulette-container">
+                <div class="roulette-bg"></div>
+                <div class="grid-x">
+                  <div class="cell">
+                      <img src="../assets/images/roleta.png" alt="" id="wheel">
+                   
+                    <img src="../assets/images/arrow.png" id="peg"><br>
+                  </div>
+                </div>
+              </div>
+              <button id="button"></button>
+            </div>
+        </section>
+    </div>
+    
+    <div class="red-bar"></div>
+    <button class="button settings-button" data-open="login"><img src="../assets/images/settings.png" alt=""></button>
+
+    <!-- Settings Security -->
+    <div class="reveal" id="login" data-reveal>
+      <h4>Enter Password</h4>
+      <hr>
+      <form action="" id="settings-login">
+        <div class="form-field">
+          <label for="">Password</label>
+          <input type="password" id="password" />
+        </div>
+        <input type="submit" value="LOGIN" class="button expanded">
+      </form>
+      <button data-close aria-label="Close modal" class="button alert expanded">CANCEL</button>
+    </div> 
+
+    <!-- LogIn error -->
+    <div class="reveal" id="errorLogin" data-reveal>
+      <h4>Login Error</h4>
+      <hr>
+      <button data-open="login" class="button alert expanded">OK</button>
+    </div>
+
+    <!-- Settings Modal -->
+    <div class="reveal" id="settingsModal" data-reveal>
+      <h2>Roulette Settings</h2>
+      <hr>
+      <div class="callout">
+        <h5>Number of Winners</h5>
+        <hr>
+        <p>Premium Prize: <span id="premium"></span></p>
+        <p>Special Prize: <span id="special"></span></p>
+      </div>
+      <div class="callout">
+        <h5>Set Prize Limit</h5>
+        <hr>
+        <form action="" id="set-limit">
+          <div class="form-field">
+            <label for="">Premium Prize Limit</label>
+            <input type="number" id="premium-input" value="45" />
+          </div>
+          <div class="form-field">
+            <label for="">Special Prize Limit</label>
+            <input type="number" id="special-input" value="110" />
+          </div>
+          <input type="submit" value="SAVE" class="button expanded" data-open="limit-saved">
+        </form>
+      </div>
+      <button id="reset-counter" class="button alert expanded" data-open="counter-reset-modal">RESET COUNTER</button>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <!-- Modal when Limit is saved -->
+    <div class="reveal" id="limit-saved" data-reveal>
+      <h4>Settings Successfully Saved!</h4>
+      <hr>
+      <a href="index.html" class="button expanded">OK</a>
+    </div>
+
+    <!-- Modal when Counter is reset -->
+    <div class="reveal" id="counter-reset-modal" data-reveal>
+      <h4>Reset Counter Success!</h4>
+      <hr>
+      <a href="index.html" class="button expanded">OK</a>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="blue-bar"></div>
+      <header>
+        <img src="../assets/images/pepsi-challenge.png" alt="">
+        <h1>SINGING</h1>
+        <h2>CHALLENGE</h2>
+      </header>
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-result center">
+          <h2></h2>
+        </div>
+        <a href="/" class="close">PLAY AGAIN</a>
+      </div>
+      <div class="red-bar"></div>
+
+    </div>
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="../assets/js/vendor/jquery.js"></script>
+    <script src="../assets/js/vendor/what-input.js"></script>
+    <script src="../assets/js/vendor/foundation.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/singing.js"></script>
+    <script>if (window.module) module = window.module;</script>
+  </body>
+</html>
