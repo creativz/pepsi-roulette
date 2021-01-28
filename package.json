@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
-    "electron": "^8.0.0",
+    "electron": "^9.4.0",
     "pretty-bytes": "^2.0.1"
   },
   "devDependencies": {
